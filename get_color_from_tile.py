@@ -2,7 +2,12 @@ from make_tile_list import make_tile_list
 from PIL import Image 
 import math
 
+
 def get_color_from_tile(tile_list, image):
+    '''
+    targetを分割し、リスト化したものであるタイルリストを元に
+    それぞれのタイルに対応したRGBを格納したリストを返します
+    '''
     tile_color_list = []
     for i in tile_list:
         central_color_of_tile = image.getpixel((math.floor((i[2] + i[0]) / 2) , math.floor((i[3] + i[1])/ 2) ))
