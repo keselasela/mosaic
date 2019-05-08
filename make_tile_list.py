@@ -2,6 +2,10 @@
 from PIL import Image
 import math
 def make_tile_list(target_image, tile_num=(100,100) ):
+    '''
+    targetを分割し、そのリストを返します
+    tile_numは分割数であり、第一引数がｘ軸方向、第二引数がｙ軸方向
+    '''
     x_tile_num = tile_num[0]
     y_tile_num = tile_num[1]
     x_target_size = target_image.size[0]
