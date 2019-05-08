@@ -21,4 +21,9 @@ def make_tile_list(target_image, tile_num=(100,100) ):
 
 if __name__ == "__main__":
     img = Image.open( "img_0.jpg" )
-    print(make_tile_list(img))
+    tile_list = make_tile_list(img)
+    print(tile_list[2000])
+    print(tile_list[2001])
+    print(tile_list[2002])
+    print(tile_list[2003])
+    print(tile_list[2004])
